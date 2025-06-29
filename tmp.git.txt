@@ -1,0 +1,57 @@
+git add lib/data.ts
+git commit -m "feat: create comprehensive paintings data structure
+
+- Add TypeScript interfaces for Painting and PaintingSeries
+- Organize paintings into series (ULUKULUBUBA, DELIMMA, Individual Works)  
+- Include proper StaticImageData types for Next.js image imports
+- Add helper functions for data access:
+  - getAllPaintings(): get all paintings across series
+  - getPaintingById(): find specific painting by ID
+  - getPaintingsBySeriesName(): get paintings from specific series
+  - getAllSeriesNames(): get list of all series names
+- Structure supports extensibility for additional paintings and metadata"
+
+git add app/paintings/[paintingname]/page.tsx
+git commit -m "feat: implement series-based dynamic painting pages
+
+- Change dynamic route to show all paintings in a series instead of individual paintings
+- Use getPaintingsBySeriesName() to fetch paintings by series name from URL params
+- Display series title and painting count
+- Map through all paintings in the series with improved layout
+- Add responsive grid layout with proper spacing and borders
+- Include series information and metadata display
+- Maintain 404 handling for invalid series names
+- Improve visual hierarchy with better typography and styling"
+
+git add app/paintings/page.tsx components/painting-card.tsx app/paintings/[paintingname]/page.tsx
+git commit -m "fix: resolve 404 errors by mapping series titles to correct keys
+
+- Add seriesKey prop to PaintingCard component to separate display title from URL key
+- Update paintings page to use correct series keys for navigation:
+  - ULUKULUBUBA → ulukulububa
+  - DELIMMA → delimma  
+  - THE PILLAR → individual
+- Fix PaintingCard to use seriesKey in URL generation instead of title
+- Add debugging logs to dynamic route for troubleshooting
+- Ensure proper mapping between display names and data structure keys"
+
+git add app/paintings/[paintingname]/page.tsx
+git commit -m "feat: add navigation buttons for painting series gallery
+
+- Add useState to track current painting index in series
+- Implement goToNext() and goToPrevious() navigation functions with circular navigation
+- Add series header showing series name and current position (e.g., '2 of 4')
+- Create Previous/Next buttons with proper styling and hover effects
+- Disable navigation buttons when series has only one painting
+- Maintain smooth user experience with consistent layout
+- Show one painting at a time instead of all paintings in series"
+
+git add app/paintings/[paintingname]/page.tsx
+git commit -m "fix: update to use React.use() for async params in Next.js 15+
+
+- Import use from React to handle async params
+- Update params type to Promise<{ paintingname: string }>
+- Use React.use() to unwrap params before accessing properties
+- Resolve Next.js warning about direct param access
+- Maintain backward compatibility while preparing for future Next.js versions
+- Clean up motion animation props formatting" 
