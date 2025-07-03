@@ -1,5 +1,5 @@
 "use client";
-import { P, H2, H1 } from "@/components/ui/typography";
+import { P, H2 } from "@/components/ui/typography";
 import { getPaintingsBySeriesName, paintingsData } from "@/lib/data";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
@@ -21,7 +21,7 @@ const PaintingPage = ({
 
   // State to track current painting index
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
+
   const painting = paintings[currentIndex];
 
   // If series not found, show 404
@@ -83,8 +83,7 @@ const PaintingPage = ({
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
               className="w-150 h-150  rounded-lg flex flex-col items-center justify-center shadow-xl group"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+
             >
               <Image
                 width={1000}

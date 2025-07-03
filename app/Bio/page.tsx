@@ -1,5 +1,4 @@
 "use client"
-import ImageHolder from "@/components/imageHolder";
 import { P } from "@/components/ui/typography";
 import Image from "next/image";
 import Link from "next/link";
