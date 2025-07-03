@@ -31,14 +31,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bodoniModa.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bodoniModa.variable} antialiased flex flex-col min-h-screen`}
       >
         <div>
           <NavBar />
         </div>
 
         {children}
-        <Footer />
+        <div className="">
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -15,10 +15,10 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
       >
     <div className="font-bodoni-moda max-w-screen-xl mx-auto mt-10 flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center w-[80%] bg-neutral-100 h-[600px] rounded-md">
+      <div className="flex flex-col justify-center items-center w-[80%] bg-neutral-100 h-[600px]  rounded-md shadow-xl">
         <Swiper
           modules={[EffectFade, Autoplay]}
           effect="fade"
@@ -50,6 +50,33 @@ export default function Home() {
           <SwiperSlide>
             <Image
               src="/ULUKULUBUBA-3.jpeg"
+              alt="Slide 3"
+              width={1000}
+              height={1000}
+              className="object-cover w-full h-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/DELIMMA-1.jpeg"
+              alt="Slide 3"
+              width={1000}
+              height={1000}
+              className="object-cover w-full h-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/DELIMMA-2.jpeg"
+              alt="Slide 3"
+              width={1000}
+              height={1000}
+              className="object-cover w-full h-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/DELIMMA-4ff.jpeg"
               alt="Slide 3"
               width={1000}
               height={1000}

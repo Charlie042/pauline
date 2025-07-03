@@ -1,14 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface Props {
   className?: string;
-  children: string;
+  children: ReactNode;
 }
 
 const H1: React.FC<Props> = ({ className, children }) => {
   return (
     <h1
-      className={`scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl ${className}`}
+      className={`scroll-m-20 text-xl font-extrabold tracking-tight lg:text-3xl ${className}`}
     >
       {children}
     </h1>

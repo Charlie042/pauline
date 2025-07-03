@@ -15,10 +15,10 @@ const NavBar = () => {
       name: "Bio",
       path: "/Bio",
     },
-    {
-      name: "Contact",
-      path: "/Contact",
-    },
+    // {
+    //   name: "Contact",
+    //   path: "/Contact",
+    // },
   ];
 
   return (
@@ -28,8 +28,8 @@ const NavBar = () => {
           <H1
             className={`font-extralight ${
               pathname === "/"
-                ? "font-semibold text-blue-900"
-                : "font-light text-blue-400"
+                ? "font-semibold "
+                : "font-light "
             }`}
           >
             Pauline Malize
@@ -48,8 +48,8 @@ const NavBar = () => {
                 key={item.name}
                 className={`${
                   isActive
-                    ? "font-semibold text-blue-900"
-                    : "font-light text-blue-400 hover:text-blue-900 transition-all duration-300"
+                    ? "font-semibold "
+                    : "font-light "
                 }`}
               >
                 {item.name}
@@ -59,7 +59,6 @@ const NavBar = () => {
         </div>
       </div>
 
-      <hr className="border-blue-200 w-full" />
     </div>
   );
 };

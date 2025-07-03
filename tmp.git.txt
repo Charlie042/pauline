@@ -54,4 +54,10 @@ git commit -m "fix: update to use React.use() for async params in Next.js 15+
 - Use React.use() to unwrap params before accessing properties
 - Resolve Next.js warning about direct param access
 - Maintain backward compatibility while preparing for future Next.js versions
-- Clean up motion animation props formatting" 
+- Clean up motion animation props formatting"
+
+git add lib/data.ts
+git commit -m "fix: correct multiline string formatting in Hug Series description
+
+- Fixed string template formatting in BRO CODE description
+- Used proper string concatenation for multiline text" 
