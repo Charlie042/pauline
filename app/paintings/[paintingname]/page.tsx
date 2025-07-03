@@ -40,16 +40,16 @@ const PaintingPage = ({
   };
 
   return (
-    <div className="flex flex-col gap-8 mx-50 mt-2 h-screen">
+    <div className="flex flex-col gap-8 xl:mx-40  mt-2 h-screen ">
       {/* Series header with navigation */}
       <div className="flex justify-end gap-4 ">
         <button
           onClick={goToNext}
           disabled={paintings.length <= 1}
-          className="group px-4 py-2 bg-transparent text-sm hover:text-blue-900 cursor-pointer transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="group px-4 py-2 bg-transparent xl:text-sm text-xs hover:font-semibold cursor-pointer transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Next{" "}
-          <span className="text-sm group-hover:ml-1 rotate-90 transition-all duration-300">
+          <span className="xl:text-sm text-xs group-hover:ml-1 rotate-90 transition-all duration-300">
             →
           </span>
         </button>
@@ -59,7 +59,7 @@ const PaintingPage = ({
       <AnimatePresence>
         <motion.div
           key={painting.id}
-          className="flex justify-center items-center gap-20  pb-8 last:border-b-0  rounded-lg shadow-lg"
+          className="flex justify-center items-center gap-20  pb-8 last:border-b-0  rounded-lg shadow-lg "
         >
           {/* <div className="flex flex-col gap-4 w-100">
             <H2 className="text-lg font-bodoni-moda text-gray-600 font-extralight italic">
@@ -77,43 +77,44 @@ const PaintingPage = ({
               <P className="text-sm leading-relaxed">{painting.description3}</P>
             )}
           </div> */}
-          <div className="flex gap-10">
+          <div className="flex lg:flex-row flex-col items-center justify-center w-full gap-10">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
-              className="w-150 h-150  rounded-lg flex flex-col items-center justify-center shadow-xl group"
-
+              className="xl:w-150 xl:h-150 md:w-150 md:h-100 w-[90%] h-[90%] rounded-lg flex flex-col items-center justify-center shadow-xl group"
             >
               <Image
                 width={1000}
                 height={1000}
                 src={painting.image}
                 alt={painting.name}
-                className="w-100 h-100 object-cover rounded-lg border"
+                placeholder="blur"
+                blurDataURL="..."
+                className="xl:w-100 xl:h-100  md:w-70 md:h-70 sm:w-70 sm:h-70 w-70 h-70 object-cover rounded-lg border"
               />
               <P className="text-sm font-bodoni-moda font-extralight italic opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="font-bold">Medium:</span> Acrylic on canvas
+                <span className="font-bold">Medium:</span> {painting.medium}
                 <br />
-                <span className="font-bold">Size:</span> 103 x 103cm
+                <span className="font-bold">Size:</span> {painting.dimensions}
                 <br />
-                <span className="font-bold">Year:</span> 2025
+                <span className="font-bold">Year:</span> {painting.year}
               </P>
             </motion.div>
-            <div className="flex flex-col gap-4 w-100 items-end ">
+            <div className="flex flex-col  lg:w-100  sm:w-150 md:px-0 px-5  items-end ">
               <H2 className="text-sm font-bodoni-moda font-extralight italic">
                 {painting.name}
               </H2>
-              <P className="text-sm font-bodoni-moda font-extralight italic leading-relaxed">
+              <P className=" xl:text-sm text-xs font-bodoni-moda font-extralight italic leading-relaxed">
                 {painting.description}
               </P>
               {painting.description2 && (
-                <P className="text-sm font-bodoni-moda font-extralight italic leading-relaxed">
+                <P className="[&:not(:first-child)]:mt-1 xl:text-sm text-xs font-bodoni-moda font-extralight italic leading-relaxed">
                   {painting.description2}
                 </P>
               )}
               {painting.description3 && (
-                <P className="text-sm font-bodoni-moda font-extralight italic leading-relaxed">
+                <P className="[&:not(:first-child)]:mt-1 xl:text-sm text-xs font-bodoni-moda font-extralight italic leading-relaxed">
                   {painting.description3}
                 </P>
               )}
@@ -125,9 +126,9 @@ const PaintingPage = ({
         <button
           onClick={goToPrevious}
           disabled={paintings.length <= 1}
-          className="group px-4 py-2 bg-transparent text-sm hover:text-blue-900 cursor-pointer transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="group px-4 py-2 bg-transparent xl:text-sm text-xs hover:font-semibold cursor-pointer transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <span className="text-xs group-hover:mr-1 rotate-90 transition-all duration-300">
+          <span className="xl:text-sm text-xs group-hover:mr-1 rotate-90 transition-all duration-300">
             ←{" "}
           </span>
           Previous
