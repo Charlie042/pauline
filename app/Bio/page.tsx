@@ -12,7 +12,7 @@ const Bio = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5, ease: "easeInOut" }}
-      className="flex gap-20 justify-center items-center "
+      className="flex gap-20 justify-center items-center xl:flex-row flex-col"
     >
       <div className="flex flex-col gap-20">
         <Swiper
@@ -21,7 +21,7 @@ const Bio = () => {
           loop={true}
           speed={3000}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
-          className="relative overflow-hidden flex flex-col gap-20 w-100 h-100"
+          className="relative overflow-hidden flex flex-col gap-20 md:w-100 w-70 h-70 md:h-100 max-sm:mx-7"
         >
           <SwiperSlide>
             <Image
@@ -33,13 +33,13 @@ const Bio = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/bio2.jpg" width={500} height={500} alt="image" />
+            <Image src="/bio2.jpg" width={500} height={500} alt="image" className="object-cover w-full h-full"/>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/bio3.jpg" width={500} height={500} alt="image" />
+            <Image src="/bio3.jpg" width={500} height={500} alt="image" className="object-cover w-full h-full"/>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/bio4.jpg" width={500} height={500} alt="image" />
+            <Image src="/bio4.jpg" width={500} height={500} alt="image" className="object-cover w-full h-full"/>
           </SwiperSlide>
         </Swiper>
         {/* <ImageHolder src="/bio-pic.jpg" /> */}
@@ -53,11 +53,11 @@ const Bio = () => {
         </div>
 
         <div className="flex flex-col gap-10">
-          <P className="text-sm font-bodoni-moda font-extralight  w-100">
+          <P className="text-sm font-bodoni-moda font-extralight  md:w-100 w-full max-sm:mx-3">
             Feel free to contact me for any inquiries about prices or
             exhibitions and collaborations.
           </P>
-          <P className="flex flex-col text-sm font-bodoni-moda font-extralight text-gray-500 w-100 text-center">
+          <P className="flex flex-col text-sm font-bodoni-moda font-extralight text-gray-500 md:w-100 w-full text-center">
             CONTACT:{" "}
             <Link href="mailto:paulineaborchi@gmail.com" className="underline">
               paulineaborchi@gmail.com
@@ -66,7 +66,7 @@ const Bio = () => {
         </div>
       </div>
       <div className="flex flex-col gap-20 my-10">
-        <P className="text-sm font-bodoni-moda font-light text-gray-600 w-150">
+        <P className="text-sm font-bodoni-moda font-light text-gray-600 md:w-150 w-full max-sm:mx-3">
           Pauline Malize Aborchi is an award-winning visual contemporary artist
           who lives and works in Abuja, Nigeria. Hailing from Ukpor in Nnewi
           LGA, Anambra State, she was born and raised in Enugu State. Her
@@ -88,21 +88,21 @@ const Bio = () => {
           (FEAAN) and the Society of Nigerian Artists (SNA).
         </P>
         <div className="flex flex-col text-center">
-          <P className="text-sm font-bodoni-moda font-light  w-150">
+          <P className="text-sm font-bodoni-moda font-light  md:w-150 w-full">
             “ For Nigerian artist and impasto proponent, Pauline Malize Aborchi,
             culture is not just something to observe, it’s something to explore,
             challenge, and celebrate through her art.”
           </P>
-          <P className="text-sm font-bodoni-moda italic font-extralight text-gray-500 w-150">
+          <P className="text-sm font-bodoni-moda italic font-extralight text-gray-500 md:w-150 w-full">
             - Ibandmagazine
           </P>
         </div>
         <div className="flex flex-col text-center">
-          <P className="text-sm font-bodoni-moda font-light  w-150">
+          <P className="text-sm font-bodoni-moda font-light  md:w-150 w-full">
             “Her Paintings, demonstrates the power of preserving our culture and
             tradition through documentation of any form ”
           </P>
-          <P className="text-sm font-bodoni-moda italic font-extralight text-gray-500 w-150">
+          <P className="text-sm font-bodoni-moda italic font-extralight text-gray-500 md:w-150 w-full">
             - Ireho Aito
           </P>
         </div>
