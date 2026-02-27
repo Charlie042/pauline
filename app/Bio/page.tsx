@@ -67,25 +67,21 @@ const Bio = () => {
       </div>
       <div className="flex flex-col gap-20 my-10">
         <P className="text-sm font-bodoni-moda font-light text-gray-600 md:w-150 w-full max-sm:mx-3">
-          Pauline Malize Aborchi is an award-winning visual contemporary artist
-          who lives and works in Abuja, Nigeria. Hailing from Ukpor in Nnewi
-          LGA, Anambra State, she was born and raised in Enugu State. Her
-          distinctive personal style, impasto, is characterized by highly
-          textured layers, through which she captures the vibrant spirit and
-          atmosphere of African culture. Pauline works primarily with oil on
-          canvas, acrylic, and charcoal. From a young age, she believed that
-          creativity is limitless when inspired by the mind’s eye. This
-          philosophy guided her artistic journey and led her to pursue formal
-          training. She earned a Higher National Diploma (HND) from the
-          Institute of Management and Technology (IMT), Enugu State. With over
-          20 years of studio practice, Pauline’s artworks have been exhibited in
-          Nigeria, the United Kingdom, and the United States. Her art pieces are
-          featured in numerous private collections across these regions. Driven
-          by a passion for continual professional growth, she is currently
-          enrolled in an online course at the New York Institute of Arts and
-          Design (USA) and is working towards certification in interior design.
-          Pauline is a proud member of the Female Association of Artists Nigeria
-          (FEAAN) and the Society of Nigerian Artists (SNA).
+        Pauline Malize Aborchi is an international, award-winning visual contemporary artist
+    based in Abuja, Nigeria. Born and raised in Enugu state, Nigeria, her artistic journey is
+marked by a distinctive style and a deep-seated philosophy on creativity.
+Her signature technique, impasto, is characterized by highly textured layers, through
+which she eloquently tells her stories. Pauline’s primary mediums include oil colors,
+acrylic, and charcoal. With over 20 years of studio practice, her work is guided by the
+philosophy she embraced from a young age: that creativity is limitless when inspired
+by the mind’s eye.
+Pauline’s creativity spans across diﬀerent genres, with her works constantly evolving
+and drawing inspiration from daily experience, society, and culture.
+She has exhibited extensively, both in Nigeria and internationally. Notably, she won
+the award for Best Emerging Artist of 2023 at the E C H O E S art exhibition, organized
+by the Society of Nigerian Artists (SNA). Her international exhibitions include shows in
+the United Kingdom, the USA, and Canada (including Art Vancouver). Her artworks
+are also found in many private collections in Nigeria and abroad.
         </P>
         <div className="flex flex-col text-center">
           <P className="text-sm font-bodoni-moda font-light  md:w-150 w-full">
