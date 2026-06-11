@@ -98,16 +98,16 @@ const Bio = () => {
             Her signature technique,{" "}
             <span className="font-bodoni-moda !font-semibold">impasto</span>, is
             characterized by highly textured layers, through which she
-            eloquently tells her stories. Pauline's primary mediums include{" "}
+            eloquently tells her stories. Pauline&apos;s primary mediums include{" "}
             <span className="font-bodoni-moda !font-bold">
               oil colors, acrylic, and charcoal
             </span>
             . With over 20 years of studio practice, her work is guided by the
             philosophy she embraced from a young age: that creativity is
-            limitless when inspired by the mind's eye.
+            limitless when inspired by the mind&apos;s eye.
           </span>
           <span>
-            Pauline's creativity spans across different genres, with her works
+            Pauline&apos;s creativity spans across different genres, with her works
             constantly evolving and drawing inspiration from daily experience,
             society, and culture.
           </span>
@@ -127,7 +127,7 @@ const Bio = () => {
         <div className="flex flex-col text-center">
           <P className="text-sm font-bodoni-moda font-light  md:w-150 w-full">
             “ For Nigerian artist and impasto proponent, Pauline Malize Aborchi,
-            culture is not just something to observe, it’s something to explore,
+            culture is not just something to observe, it&apos;s something to explore,
             challenge, and celebrate through her art.”
           </P>
           <P className="text-sm font-bodoni-moda italic font-extralight text-gray-500 md:w-150 w-full">

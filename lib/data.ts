@@ -11,6 +11,7 @@ import {
   SEEYOUAGAIN,
   BROCODE,
   SAFEHAVEN,
+  CROSSROADS,
 } from "@/public";
 import { StaticImageData } from "next/image";
 

@@ -40,7 +40,7 @@ const PaintingPage = ({
   };
 
   return (
-    <div className="flex flex-col gap-8 xl:mx-40  mt-2 min-h-screen">
+    <div className="flex flex-col justify-center items-center gap-8 xl:px-50 max-w-[1440px]  mt-2 min-h-screen border border-red-500">
       {/* Series header with navigation */}
       <div className="flex justify-end gap-4 ">
         <button
@@ -59,7 +59,7 @@ const PaintingPage = ({
       <AnimatePresence>
         <motion.div
           key={painting.id}
-          className="flex justify-center items-center gap-20  pb-8 last:border-b-0  rounded-lg shadow-lg "
+          className="flex justify-center items-center gap-20  pb-8 last:border-b-0  rounded-lg shadow-lg border border-red-500 max-w-600 w-full lg:w-300  "
         >
           {/* <div className="flex flex-col gap-4 w-100">
             <H2 className="text-lg font-bodoni-moda text-gray-600 font-extralight italic">

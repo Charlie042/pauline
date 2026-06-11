@@ -1,6 +1,13 @@
 "use client";
 import { PaintingCard } from "@/components/painting-card";
-import { ULUKULUBUBA_1, DELIMMA_1, THEPILLIAR, SOLITUDE, SEEYOUAGAIN } from "@/public";
+import {
+  ULUKULUBUBA_1,
+  DELIMMA_1,
+  THEPILLIAR,
+  SOLITUDE,
+  SEEYOUAGAIN,
+  CROSSROADS,
+} from "@/public";
 import { AnimatePresence, motion } from "motion/react";
 
 const Paintings = () => {
@@ -41,6 +48,13 @@ const Paintings = () => {
               image={SOLITUDE}
               title="SOLITUDE"
               seriesKey="solitude"
+            />
+          </motion.div>
+          <motion.div className="">
+            <PaintingCard
+              image={CROSSROADS}
+              title="CROSSROADS"
+              seriesKey="crossroads"
             />
           </motion.div>
         </motion.div>
