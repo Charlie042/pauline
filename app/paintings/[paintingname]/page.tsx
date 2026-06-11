@@ -93,7 +93,7 @@ const PaintingPage = ({
                 blurDataURL="..."
                 className="xl:w-100 xl:h-100  md:w-70 md:h-70 sm:w-70 sm:h-70 w-70 h-70 object-cover rounded-lg border"
               />
-              <P className="text-sm font-bodoni-moda font-extralight italic opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <P className="text-sm font-bodoni-moda font-extralight italic opacity-100 group-hover:opacity-0 transition-opacity duration-300">
                 <span className="font-bold">Medium:</span> {painting.medium}
                 <br />
                 <span className="font-bold">Size:</span> {painting.dimensions}

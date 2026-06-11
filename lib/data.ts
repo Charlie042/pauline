@@ -11,7 +11,7 @@ import {
   SEEYOUAGAIN,
   BROCODE,
   SAFEHAVEN,
-  } from "@/public";
+} from "@/public";
 import { StaticImageData } from "next/image";
 
 export interface Painting {
@@ -204,6 +204,21 @@ export const paintingsData: Record<string, PaintingSeries> = {
         medium: "Acrylic on canvas",
         dimensions: "213 X 152cm",
         image: SEEYOUAGAIN,
+      },
+    ],
+  },
+  crossroads: {
+    seriesName: "CROSSROADS",
+    paintings: [
+      {
+        id: "crossroads",
+        name: "CROSSROADS",
+        description:
+          "CROSSROADS  is a poignant painting that tells the story of a young girl sitting at the threshold of a school bus, her posture conveying both weariness and hope. Surrounded by the familiar symbols of her daily journey, she reflects the experiences of countless children whose dreams are carried alongside them each day. The painting speaks to perseverance, the pursuit of knowledge, and the belief that every journey—no matter how ordinary it may seem—holds the promise of a brighter future. The bold colors and textured strokes invite viewers to contemplate the strength, innocence, and aspirations of youth.",
+        year: "2024",
+        medium: "Oil on canvas",
+        dimensions: "129 X139 CM",
+        image: CROSSROADS,
       },
     ],
   },

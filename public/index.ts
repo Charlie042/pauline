@@ -10,6 +10,7 @@ import SOLITUDE from "./SOLITUDE.jpeg";
 import SEEYOUAGAIN from "./SeeYouAgain.jpeg";
 import BROCODE from "./BROCODE.jpeg";
 import SAFEHAVEN from "./hug.jpg";
+import CROSSROADS from "./newone.png";
 
 export {
   ULUKULUBUBA_1,
@@ -24,4 +25,5 @@ export {
   SEEYOUAGAIN,
   BROCODE,
   SAFEHAVEN,
-  };
+  CROSSROADS,
+};

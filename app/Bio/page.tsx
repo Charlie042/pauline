@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import { P } from "@/components/ui/typography";
 import Image from "next/image";
 import Link from "next/link";
-import {motion} from "motion/react"
+import { motion } from "motion/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -33,13 +33,31 @@ const Bio = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/bio2.jpg" width={500} height={500} alt="image" className="object-cover w-full h-full"/>
+            <Image
+              src="/bio2.jpg"
+              width={500}
+              height={500}
+              alt="image"
+              className="object-cover w-full h-full"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/bio3.jpg" width={500} height={500} alt="image" className="object-cover w-full h-full"/>
+            <Image
+              src="/bio3.jpg"
+              width={500}
+              height={500}
+              alt="image"
+              className="object-cover w-full h-full"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/bio4.jpg" width={500} height={500} alt="image" className="object-cover w-full h-full"/>
+            <Image
+              src="/bio4.jpg"
+              width={500}
+              height={500}
+              alt="image"
+              className="object-cover w-full h-full"
+            />
           </SwiperSlide>
         </Swiper>
         {/* <ImageHolder src="/bio-pic.jpg" /> */}
@@ -66,22 +84,45 @@ const Bio = () => {
         </div>
       </div>
       <div className="flex flex-col gap-20 my-10">
-        <P className="text-sm font-bodoni-moda font-light text-gray-600 md:w-150 w-full max-sm:mx-3">
-        Pauline Malize Aborchi is an international, award-winning visual contemporary artist
-    based in Abuja, Nigeria. Born and raised in Enugu state, Nigeria, her artistic journey is
-marked by a distinctive style and a deep-seated philosophy on creativity.
-Her signature technique, impasto, is characterized by highly textured layers, through
-which she eloquently tells her stories. Pauline’s primary mediums include oil colors,
-acrylic, and charcoal. With over 20 years of studio practice, her work is guided by the
-philosophy she embraced from a young age: that creativity is limitless when inspired
-by the mind’s eye.
-Pauline’s creativity spans across diﬀerent genres, with her works constantly evolving
-and drawing inspiration from daily experience, society, and culture.
-She has exhibited extensively, both in Nigeria and internationally. Notably, she won
-the award for Best Emerging Artist of 2023 at the E C H O E S art exhibition, organized
-by the Society of Nigerian Artists (SNA). Her international exhibitions include shows in
-the United Kingdom, the USA, and Canada (including Art Vancouver). Her artworks
-are also found in many private collections in Nigeria and abroad.
+        <P className="text-sm font-bodoni-moda font-light text-gray-600 md:w-150 w-full max-sm:mx-3 flex flex-col gap-2">
+          <span>
+            <span className="font-bodoni-moda !font-semibold">
+              Pauline Malize Aborchi{" "}
+            </span>
+            is an international, award-winning visual contemporary artist based
+            in Abuja, Nigeria. Born and raised in Enugu state, Nigeria, her
+            artistic journey is marked by a distinctive style and a deep-seated
+            philosophy on creativity.
+          </span>
+          <span>
+            Her signature technique,{" "}
+            <span className="font-bodoni-moda !font-semibold">impasto</span>, is
+            characterized by highly textured layers, through which she
+            eloquently tells her stories. Pauline's primary mediums include{" "}
+            <span className="font-bodoni-moda !font-bold">
+              oil colors, acrylic, and charcoal
+            </span>
+            . With over 20 years of studio practice, her work is guided by the
+            philosophy she embraced from a young age: that creativity is
+            limitless when inspired by the mind's eye.
+          </span>
+          <span>
+            Pauline's creativity spans across different genres, with her works
+            constantly evolving and drawing inspiration from daily experience,
+            society, and culture.
+          </span>
+          <span>
+            She has exhibited extensively, both in Nigeria and internationally.
+            Notably, she won the award for{" "}
+            <span className="font-bodoni-moda !font-bold">
+              Best Emerging Artist of 2023{" "}
+            </span>
+            at the E C H O E S art exhibition, organized by the Society of
+            Nigerian Artists (SNA). Her international exhibitions include shows
+            in the United Kingdom, the USA, and Canada (including{" "}
+            <b className="font-bold">Art Vancouver</b>). Her artworks are also
+            found in many private collections in Nigeria and abroad.
+          </span>
         </P>
         <div className="flex flex-col text-center">
           <P className="text-sm font-bodoni-moda font-light  md:w-150 w-full">
