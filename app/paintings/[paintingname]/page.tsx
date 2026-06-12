@@ -40,7 +40,7 @@ const PaintingPage = ({
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-8 xl:px-50 max-w-[1440px] mx-auto mt-2 min-h-screen ">
+    <div className="flex flex-col  items-center gap-8 xl:px-50 max-w-[1440px] mx-auto min-h-screen ">
       {/* Series header with navigation */}
       <div className="self-end flex justify-end gap-4">
         <button
