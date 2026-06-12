@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Bodoni_Moda} from "next/font/google";
+import { Geist, Geist_Mono, Bodoni_Moda } from "next/font/google";
 import Footer from "@/components/footer";
 import "./globals.css";
 import NavBar from "@/components/nav-bar";
@@ -20,7 +20,7 @@ const bodoniModa = Bodoni_Moda({
 
 export const metadata: Metadata = {
   title: "Pauline's Art",
-  description: "Art by Pauline",
+  description: "Art by Pauline Malize Aborchi",
 };
 
 export default function RootLayout({
